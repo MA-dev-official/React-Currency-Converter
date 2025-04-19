@@ -22,14 +22,14 @@ function CurrencyConverter() {
   };
 
   return (
-    <div className="w-[90%] bg-white/30  border-2 border-gray-400 rounded-xl p-3 backdrop-blur-[2px] flex flex-col items-center justify-center gap-4">
+    <div className="w-[90%] sm:w-[500px] bg-white/30  border-2 border-gray-400 rounded-xl p-3 backdrop-blur-[2px] flex flex-col items-center justify-center gap-4">
       <h1 className="text-2xl text-white">Currency Converter</h1>
       <form
         onSubmit={(e) => {
           e.preventDefault();
           convert();
         }}
-        className="w-full h-full flex flex-col items-center justify-center relative gap-2"
+        className="w-full h-full flex flex-col items-center justify-center relative gap-5"
       >
         <InputBox
           lable="From"
